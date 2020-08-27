@@ -1,1 +1,117 @@
 /* var, estilização e seletores */
+
+/* ponto referencia classe */
+/* .classe {
+     font-size: 30px;
+     color: blue;
+     text-align: center;
+}
+
+.giovanna {
+     padding: 50px;
+} */
+
+/* hashtag referencia id */
+/* #id {
+     font-size: 35px;
+     color: green;
+     text-align: right;
+}
+
+header {
+     background-color: #ff3c5d;
+     padding: 10px 40px;
+}
+
+header h1 {
+     color: #333;
+     text-transform: uppercase;
+     letter-spacing: 10px;
+     word-spacing: 30px;
+     font-size: 2rem;
+} */
+
+.estilos-basicos {
+     list-style: none;
+     /* retira ou coloca a bolinha que nao lembro o nome nas listas */
+
+     text-decoration: none;
+     /* retira o underline dos links */
+
+     box-sizing: border-box;
+     /* recalcula o espacamento das padding (sei la mano)*/
+
+     margin: 0;
+     /* espaçamento de fora */
+
+     padding: 0;
+     /* espaçamento de dentro */
+
+     color: blue;
+     /* mudar a cor */
+
+     background-color: rgb(24, 136, 170);
+     /* mudar cor de fundo */
+
+     font-size: 1rem;
+     /* tamanho da fonte */
+
+     padding: 2px;
+     margin: 2px;
+
+     width: 2px;
+     /* tamanho do elemento horizontal / pixel porcentagem etc */
+
+     height: 2px;
+     /* tamanho do elemnto altura pixel porcentagem etc */
+
+     border: 5px dashed crimson;
+     /* borda tamanho tipo(solid, dashed) e cor  */
+
+     border-radius: 100%;
+     /* borda redonda */
+
+     font-family: fantasy;
+     /* tipo de font */
+
+     text-align: center;
+     /* centralizar o texto */
+
+     word-spacing: 5px;
+     /* espaçamento entre as palavras */
+
+     letter-spacing: 5px;
+     /* espaçamento entre as letras */
+
+     font-weight: 200;
+     /* expessura da fonte */
+
+     text-transform: lowercase;
+     /* deixar tudo maiusculo ou minusculo ou toda primeira letra das palavras maiusculas */
+
+     text-shadow: 5px 5px 5px red;
+     /* sombra no texto */
+}
+
+.box {
+     width: 300px;
+     height: 100px;
+     background-color: coral;
+     /* margin: 30px; */
+     /* margin-top: 10px;
+     margin-left: 20px; */
+     margin: 10px 20px;
+     
+     /* padding: 30px; */
+     /* padding-left: 40px;
+     padding-top: 50px; */
+     padding: 10px 20px;
+
+}
+
+.marpad {
+     color: black;
+     background-color: #fff;
+     /* padding: 15px; */
+
+}
