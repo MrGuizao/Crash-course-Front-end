@@ -1,0 +1,20 @@
+/* body {
+     background-image: url('https://unsplash.it/1000/1000');
+     background-size: cover;
+     background-repeat: no-repeat;
+} */
+
+ul {
+     border: 1px solid white;
+     margin: 40px;
+     height: 100px;
+
+     display: flex;
+     justify-content: space-between;
+     /* justify-items: flex-start; */
+     flex-direction: row;
+     flex-wrap: nowrap;
+     flex-flow: row nowrap;
+     align-items: flex-end;
+
+}
