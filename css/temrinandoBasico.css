@@ -1,0 +1,55 @@
+header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #3f74fb;
+     padding: 15px 40px;
+}
+
+header h1 a {
+     font-size: 1.8rem;
+     color: white;
+}
+
+header nav ul {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+}
+
+header nav ul li a {
+     color: white;
+     font-size: 1.2rem;
+     margin: 0 15px;
+
+}
+
+.alinha-imagens {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     padding: 50px 0;
+
+}
+
+.alinha-imagens img {
+     border-radius: 100%;
+     width: 200px;
+
+}
+
+footer {
+     padding: 25px 0;
+     background-color: #3f74fb;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     bottom: 0;
+}
+
+footer h1 {
+     text-align: center;
+     color: white;
+     font-size: 1.8rem;
+
+}

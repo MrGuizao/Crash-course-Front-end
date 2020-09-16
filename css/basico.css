@@ -106,21 +106,21 @@ header h1 {
      /* padding-left: 40px;
      padding-top: 50px; */
      padding: 10px 20px;
-     overflow: hidden;
-     overflow-y: scroll;
+     /* overflow: hidden;
+     overflow-y: scroll; */
 
 
 }
 
-.marpad {
+/* .marpad {
      color: black;
-     background-color: #fff;
+     background-color: #fff; */
      /* padding: 15px; */
 
-}
+/* } */
 
-.box h3 {
+/* .box h3 {
      color: var(--cor-vermelha);
      font-size: var(--tamanho-h1);
      
-}
+} */
