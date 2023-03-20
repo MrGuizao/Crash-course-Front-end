@@ -18,15 +18,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 // const gio = document.querySelector('section p');
 // gio.setAttribute('style', 'font-size: 30px; color: red;');
 // gio.setAttribute('class', 'gio');
@@ -50,68 +41,46 @@
 //      console.log(g.toFixed(6));
 // }
 
-const escrita = 'string'; // escrita
-const numero = 20; // numerais
-const boolean = false; // boolean
-const arr = [false, 20, [20, 20, 20], 'bar']; // contem varios megazordes dentro
-const obj = {
-     nome: 'guilherme',
-     idade: 24,
-     altura: 1.79,
-     booleano: false,
-     array: [20, 40, 60],
-     objeto: {
-          rua: 'manoel',
-          numero: 362,
-     },
-     func() {
-          console.log(`nomes: ${this.nome} ${this.idade * 2}`)
-     }
-} // contem mais megazordes ainda aqui dentro e de qualquer tipo
+// const escrita = 'string'; // escrita
+// const numero = 20; // numerais
+// const boolean = false; // boolean
+// const arr = [false, 20, [20, 20, 20], 'bar']; // contem varios megazordes dentro
+// const obj = {
+//      nome: 'guilherme',
+//      idade: 24,
+//      altura: 1.79,
+//      booleano: false,
+//      array: [20, 40, 60],
+//      objeto: {
+//           rua: 'manoel',
+//           numero: 362,
+//      },
+//      func() {
+//           console.log(`nomes: ${this.nome} ${this.idade * 2}`)
+//      }
+// } // contem mais megazordes ainda aqui dentro e de qualquer tipo
 // obj.func();
 
-const numeros = [
-     { nome: 'gui', idade: 30 },
-     { nome: 'barbara', idade: 80 },
-     { nome: 'giovanna', idade: 30 },
-     { nome: 'jullia', idade: 18 },
-     { nome: 'algum corno qualquer', idade: 230 },
-];
+// const numeros = [
+//      { nome: 'gui', idade: 30 },
+//      { nome: 'barbara', idade: 80 },
+//      { nome: 'giovanna', idade: 30 },
+//      { nome: 'jullia', idade: 18 },
+//      { nome: 'algum corno qualquer', idade: 230 },
+// ];
 
 // const novavar = numeros.map(function (el) {
 //      console.log(el)
 // }, 0);
-
 // console.log(novavar);
-
 // console.log(numeros[0].nome);
-
-
-
-
-
-
-
-
-
-
 
 
 // arr.push('final'); // adiciona no final
 // arr.unshift('começo'); //adiciona no começo
 // arr.pop();//remove no final
 // arr.shift();//adiciona no começo
-
 // console.log(arr)
-
-
-
-
-
-
-
-
-
 
 
 
@@ -138,9 +107,7 @@ const numeros = [
 //           return console.log(a * 2);
 //      }
 //      toFixed(a){
-
 //      }
-
 // }
 // const p = new Pessoa();
 // p.comma(40);

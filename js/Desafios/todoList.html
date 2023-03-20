@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>TO DO LIST</title>
+     <style>
+          * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               text-decoration: none;
+               outline: 0;
+               border: none;
+               font-size: 110%;
+          }
+
+          body {
+               background-color: antiquewhite;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               height: 100vh;
+          }
+
+          input {
+               padding: 12px;
+               border: none;
+          }
+
+          select {
+               padding: 12px 24px;
+               border-radius: 4px 0 0 4px;
+               border: none;
+          }
+
+          button {
+               padding: 12px 24px;
+               border-radius: 0 4px 4px 0;
+               border: none;
+               cursor: pointer;
+          }
+
+          .box {
+               width: 75%;
+               min-height: 75%;
+               height: auto;
+               display: grid;
+               grid-template-areas:
+                    "a a"
+                    "b c";
+          }
+
+          .grid-input {
+               grid-area: a;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               width: 100%;
+               background-color: #5875d4;
+               border-radius: 8px 8px 0 0;
+          }
+
+          .grid-loose {
+               grid-area: b;
+               background-color: #e48686;
+               border-radius: 0 0 0 8px;
+          }
+
+          .grid-win {
+               grid-area: c;
+               background-color: #b1e085;
+               border-radius: 0 0 8px 0;
+          }
+
+          .item {
+               list-style: circle;
+               font-weight: 800;
+               display: flex;
+               justify-content: center;
+               flex-flow: column wrap;
+               align-items: center;
+               text-transform: uppercase;
+               font-size: 1.6rem;
+               margin: 8px;
+          }
+
+          .loose-item {
+               color: #641f1f;
+          }
+
+          .win-item {
+               color: #365816;
+          }
+
+          .win-item,
+          .loose-item {
+               padding: 8px;
+          }
+     </style>
+</head>
+
+<body>
+     <main class="box">
+          <div class="grid-input">
+               <select name="plus-minus" id="values">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+               </select>
+               <input type="number" placeholder="Enter new item..." id="input" name="input">
+               <button id="enterValue">Enter</button>
+          </div>
+
+          <div class="grid-loose">
+               <ul id="loose-list" class="item">
+               </ul>
+          </div>
+
+          <div class="grid-win">
+               <ul id="win-list" class="item">
+               </ul>
+          </div>
+     </main>
+
+
+     <script>
+          'use strict'
+          const winLi = document.querySelector('#win-list');
+          const looseLi = document.querySelector('#loose-list');
+          const boxValues = document.querySelector('#values');
+          const input = document.querySelector('#input');
+          const payments = [];
+          const debts = [];
+          let total = 0;
+
+          const addElement = (classe, status) => {
+               const createLi = document.createElement('li');
+               createLi.setAttribute('class', classe);
+               createLi.innerHTML = input.value;
+               status.appendChild(createLi);
+          }
+
+          document.querySelector('#enterValue').addEventListener('click', () => {
+               const createLi = document.createElement('li');
+               if (boxValues.value === '+') {
+                    addElement('win-item', winLi);
+                    payments.push(input.value);
+                    console.log(payments);
+
+               } else {
+                    addElement('loose-item', looseLi);
+                    debts.push(input.value);
+                    console.log(debts);
+               }
+
+               input.value = '';
+          });
+
+     </script>
+</body>
+
+</html>
