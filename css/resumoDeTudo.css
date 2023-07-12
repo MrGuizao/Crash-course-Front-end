@@ -1,3 +1,32 @@
+/* aqui voce cria as variaveis */
+:root {
+     --corVermelha: #16b13f;
+     --fontH1: 2rem;
+     --texto: uppercase;
+}
+/* aqui voce cria as variaveis */
+
+/* aqui voce reset a config do site  */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-size: 100%;
+     outline: 0;
+     list-style: 0;
+     text-decoration: none;
+}
+
+/* aqui voce reset a config do site  */
+
+/* como usar as variaveis */
+.hero {
+     background-color: var(--corVermelha);
+     font-size: var(--fontH1);
+}
+
+/* como usar as variaveis */
+
 /* tags basicas para fontes */
 h1 {
      color: rgb(55, 108, 155);
@@ -57,11 +86,11 @@ h1 {
      transform: translate(-50%, -50%);
      top: 50%;
      left: 50%;
-     z-index: 10;
+     z-index: 1;
 
 }
-
 /* tags basicas de estilo */
+
 /* dislay flex */
 .display {
      display: flex;
@@ -140,6 +169,11 @@ h1 {
      grid-column-end: 3;
      grid-row-start: 2;
      grid-row-end: 3;
+     
+}
+
+@media screen {
+     
 }
 
 
